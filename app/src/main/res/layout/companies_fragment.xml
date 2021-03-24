@@ -4,11 +4,11 @@
     android:layoutDirection="rtl"
     android:orientation="vertical"
     >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -16,21 +16,13 @@
             android:paddingTop="60dp"
             android:paddingBottom="60dp"
             android:background="@drawable/layout_bottom_radius"
-            android:orientation="vertical"
             >
+
             <ImageView
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/ic_add_user"
                 android:padding="10dp"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="أعمال حرة"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:textSize="40sp"
                 />
         </LinearLayout>
         <LinearLayout
@@ -39,7 +31,6 @@
             android:padding="15dp"
             android:orientation="vertical"
             android:gravity="center"
-            android:id="@+id/reg_content"
             >
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -50,9 +41,9 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/phone"
-                    android:hint="رقم الهاتف"
-                    android:drawableStart="@drawable/ic_phone"
+                    android:id="@+id/email"
+                    android:hint="الإيميل"
+                    android:drawableEnd="@drawable/ic_emial"
                     android:drawablePadding="10dp"
                     android:inputType="textEmailAddress"
                     />
@@ -67,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/password"
                     android:hint="كلمة المرور"
-                    android:drawableStart="@drawable/ic_key"
+                    android:drawableEnd="@drawable/ic_key"
                     android:drawablePadding="10dp"
                     android:inputType="textPassword"
                     />
@@ -83,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/confirm"
                     android:hint="تأكيد كلمة المرور"
-                    android:drawableStart="@drawable/ic_key"
+                    android:drawableEnd="@drawable/ic_key"
                     android:drawablePadding="10dp"
                     android:inputType="textPassword"
                     android:textColor="@color/primary"
