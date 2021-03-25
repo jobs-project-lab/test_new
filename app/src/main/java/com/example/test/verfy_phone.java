@@ -25,7 +25,6 @@ import java.util.concurrent.TimeUnit;
 
 public class verfy_phone extends AppCompatActivity {
     private FirebaseAuth mAuth;
-
     private String mVerificationId;
     private PhoneAuthProvider.ForceResendingToken mResendToken;
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
