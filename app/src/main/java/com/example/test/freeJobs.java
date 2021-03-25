@@ -71,7 +71,8 @@ public class freeJobs extends Fragment {
                     message.setVisibility(View.VISIBLE);
                 } else {
                     if(password.matches(confirm)){
-                        Intent intent = new Intent(v.getContext(),verfy_phone.class);
+                        Intent intent = new Intent(view.getContext(),verfy_phone.class);
+                        intent.putExtra("phone",email);
                         startActivity(intent);
                     }else{
                         message.setText("كلمتا المرور غير متطابقتين");
